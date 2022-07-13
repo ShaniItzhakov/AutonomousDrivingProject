@@ -9,6 +9,7 @@ We visualised the movement of the drone, it's path and the distance from the dro
 
 ### Analysis and deep learning
 The alalysis of the obstacles is used by deep learning that identifies by color of depth from the video analysis.
+Then, we found using the identification the x and y parameters of each obstacle and by that we figured out how to calculate the path of the drone.
 
 <img width="549" alt="pic2" src="https://user-images.githubusercontent.com/73496090/178831447-d546c5d9-0a9a-425d-b1a0-951279fccebd.PNG">
 
@@ -26,3 +27,5 @@ Run the following two commands in the terminal:
 
 > - cd ~YourFilesFolder
 > - google notebook targetfile.ipynb
+
+<img width="281" alt="tree" src="https://user-images.githubusercontent.com/73496090/178832664-6909c718-359c-456f-a85b-b3342057a2af.png">
