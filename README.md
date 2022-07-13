@@ -23,9 +23,9 @@ We used Python and Google Colaboratory Notebook as a platform to run the code.
 Google Colaboratory Notebook is required.
 
 Run the following two commands in the terminal:
-(you need to "cd" to your files folder and then run the "google notebook targetfile.ipynb" command).
+(you need to "cd" to your files folder and then run the "jupyter notebook targetfile.ipynb" command).
 
 > - cd ~YourFilesFolder
-> - google notebook targetfile.ipynb
+> - jupyter notebook targetfile.ipynb
 
 <img width="281" alt="tree" src="https://user-images.githubusercontent.com/73496090/178832664-6909c718-359c-456f-a85b-b3342057a2af.png">
