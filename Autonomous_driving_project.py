@@ -8,6 +8,7 @@ Original file is located at
 """
 
 bagfile_name = '20220609_143137.bag'
+number_of_frames = 100
 
 !pip install cvbridge3 
 !pip install pyrealsense2 
@@ -68,7 +69,7 @@ import numpy as np
 minmax_arr = []
 
 idx = 0
-while idx<100:
+while idx<number_of_frames:
       frames = pipeline.wait_for_frames()
       color_frame = frames.get_color_frame()
       depth_frame = frames.get_depth_frame()
@@ -170,7 +171,7 @@ import matplotlib.pyplot as plt
 import math
 
 i = 0
-while i<100:
+while i<number_of_frames:
   try:
     if i % 100 == 0:
       print("in image number: ", i)
@@ -252,7 +253,7 @@ frame = cv2.imread(os.path.join(image_folder, images[0]))
 height, width, layers = frame.shape
 
 video = cv2.VideoWriter(video_name, 0, 5, (width,height))
-for g in range(500):
+for g in range(number_of_frames):
   image  =str(g).zfill(5) + ".png"
   video.write(cv2.imread(os.path.join(image_folder, image)))
 
