@@ -1,5 +1,8 @@
 # Autonomous Driving Project
 
+***Authors:** Eden Shkuri & Yosef Schwartz & Shani Itzhakov*
+
+
 ### The project
 We developed a control algorithm that include video analysis capability to enable autonomous driving to avoid obstacles in a forest.
 
