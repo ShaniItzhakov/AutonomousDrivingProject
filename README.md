@@ -1,15 +1,16 @@
-# Autonomous Drone Project
+# Autonomous Driving Project
 
 ### The project
-We developed a control algorithm that include video analysis capability to enable autonomous drone to avoid obstacles in a forest.
+We developed a control algorithm that include video analysis capability to enable autonomous driving to avoid obstacles in a forest.
 
-The drone is able, using the algorithm, to dodge the obstables right and left that he encounters in the video and be aware of the depth between himself and the obstacles.
+The car is able, using the algorithm, to dodge the obstables right and left that it encounters in the video and be aware of the depth between himself and the obstacles.
 
-We visualised the movement of the drone, it's path and the distance from the drone to the obstacles in the video that we analyzed.
+We visualised the movement of the car, it's path and the distance from the car to the obstacles in the video that we analyzed.
 
 ### Analysis and deep learning
-The alalysis of the obstacles is used by deep learning that identifies by color of depth from the video analysis.
-Then, we found using the identification the x and y parameters of each obstacle and by that we figured out how to calculate the path of the drone.
+The alalysis of the obstacles is used by deep learning that identifies by a depth frame matrix from the video analysis.
+Then, we found using the identification the x and y parameters of each obstacle and by that,
+we figured out how to calculate the path of the car - we identified the obstacle that is the closest to our car and we turned to the side that has fewer trees that is away from the obstacle itself.
 
 <img width="549" alt="pic2" src="https://user-images.githubusercontent.com/73496090/178831447-d546c5d9-0a9a-425d-b1a0-951279fccebd.PNG">
 
