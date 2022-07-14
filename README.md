@@ -3,32 +3,28 @@
 ### The project
 We developed a control algorithm that include video analysis capability to enable autonomous driving to avoid obstacles in a forest.
 
-The car is able, using the algorithm, to dodge the obstables right and left that it encounters in the video and be aware of the depth between himself and the obstacles.
-
-We visualised the movement of the car, it's path and the distance from the car to the obstacles in the video that we analyzed.
+Using the algorithm, the car is able to estimate the depth of the objects and choose between left or right in case there is a close object.
 
 ### Analysis and deep learning
-The alalysis of the obstacles is used by deep learning that identifies by a depth frame matrix from the video analysis.
-Then, we found using the identification the x and y parameters of each obstacle and by that,
-we figured out how to calculate the path of the car - we identified the obstacle that is the closest to our car and we turned to the side that has fewer trees that is away from the obstacle itself.
+The object detecton is done using YOLOv5 with a ready weights file called 'best.pt' <br /><br />
+<img width="281" alt="tree" src="https://user-images.githubusercontent.com/73496090/178832664-6909c718-359c-456f-a85b-b3342057a2af.png"><br />
+
+The object's estimated distanse is given by the depth frame from the bag file.
+
+In case the object is at a distance of 2.5 meters to 5 meters we will see a 45 degrees arrow, and in case the distance is less than 2.5 meters we will see a sharp arrow.<br />
+Click ['example_video.mp4'](https://github.com/ShaniItzhakov/AutonomousDrivingProject/blob/main/example_video.mp4) for visualiation.
 
 <img width="549" alt="pic2" src="https://user-images.githubusercontent.com/73496090/178831447-d546c5d9-0a9a-425d-b1a0-951279fccebd.PNG">
 
 <img width="550" alt="pic" src="https://user-images.githubusercontent.com/73496090/178831506-c72bd482-e3eb-45e3-9c61-e140c3b05e88.PNG">
 
-### Sources
-We used a RealSence camera for the video capture and depth capture.
+### Data collection
+We used a RealSence stereo camera for the video capture and depth capture.
 We used Python and Google Colaboratory Notebook as a platform to run the code.
 
 ### Running instructions
-Google Colaboratory Notebook is required.
+1. Upload the `best.pt` and the bag file that you have to the main folder in your drive. (you can use dose in the Videos.zip)
+2. Open the `AutonomousDrivingProject.ipynb` in Google Colab
+3. Rename the file name in the first row - `bagfile_name = '20220609_143137.bag' `
+4. Run the `AutonomousDrivingProject.ipynb`
 
-Upload the best.pt file and the Videos.zip file that contains the .bag files to the drive.
-
-Run the following two commands in the terminal:
-(you need to "cd" to your files folder and then run the "jupyter notebook targetfile.ipynb" command).
-
-> - cd ~YourFilesFolder
-> - jupyter notebook targetfile.ipynb
-
-<img width="281" alt="tree" src="https://user-images.githubusercontent.com/73496090/178832664-6909c718-359c-456f-a85b-b3342057a2af.png">
