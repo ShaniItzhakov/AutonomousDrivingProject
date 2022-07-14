@@ -28,6 +28,8 @@ We used Python and Google Colaboratory Notebook as a platform to run the code.
 ### Running instructions
 1. Upload the `best.pt` and the bag file that you have to the main folder in your drive. (you can use dose in the Videos.zip)
 2. Open the `AutonomousDrivingProject.ipynb` in Google Colab
-3. Rename the file name in the first row - `bagfile_name = '20220609_143137.bag' `
-4. Run the `AutonomousDrivingProject.ipynb`
+3. Rename the file name in the first row - `bagfile_name`
+4. set the number of frames that you want to test in the second row - `number_of_frames`
+5. Run the `AutonomousDrivingProject.ipynb`
+
 
