@@ -23,6 +23,8 @@ We used Python and Google Colaboratory Notebook as a platform to run the code.
 ### Running instructions
 Google Colaboratory Notebook is required.
 
+Upload the best.pt file and the Videos.zip file that contains the .bag files to the drive.
+
 Run the following two commands in the terminal:
 (you need to "cd" to your files folder and then run the "jupyter notebook targetfile.ipynb" command).
 
